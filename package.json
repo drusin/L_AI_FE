@@ -1,0 +1,37 @@
+{
+  "name": "l_ai_fe",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack/webpack.prod.config.js",
+    "start": "webpack-dev-server --open --host 0.0.0.0 --disableHostCheck --config webpack/webpack.dev.config.js",
+    "pages": "webpack --config webpack/webpack.prod.config.js --output-path docs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drusin/L_AI_FE.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drusin/L_AI_FE/issues"
+  },
+  "homepage": "https://github.com/drusin/L_AI_FE#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "5.0.4",
+    "file-loader": "4.2.0",
+    "html-webpack-plugin": "3.2.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.6.4",
+    "webpack": "4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.9.0",
+    "webpack-merge": "4.2.2"
+  },
+  "dependencies": {
+    "phaser": "3.20.1"
+  }
+}
