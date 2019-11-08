@@ -32,7 +32,7 @@ export default class Box2d {
     createStaticBox(x: number, y: number, width: number, height: number) {
         const body = this.world.createBody();
         body.createFixture(new planck.Box(width / 2 / this.pixelToMetres, height / 2 / this.pixelToMetres));
-        body.setPosition(new planck.Vec2(x / this.pixelToMetres, y / this.pixelToMetres));
+        body.setPosition(new planck.Vec2((x + width / 2) / this.pixelToMetres, (y + height / 2) / this.pixelToMetres));
     }
 
     update(delta) {
