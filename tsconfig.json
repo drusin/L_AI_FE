@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
       "target": "es5",
-      "sourceMap": true
+      "sourceMap": true,
+      "esModuleInterop": true
     },
     "include": [
       "**/*.ts"
