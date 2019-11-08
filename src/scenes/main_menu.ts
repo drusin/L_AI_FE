@@ -30,6 +30,8 @@ export class MainMenuScene extends Scene {
         this.box2d = new Box2d();
         this.box2d.createStaticBox(10, 30, 100, 25);
         this.box2d.createStaticBox(100, 300, 17, 76);
+        
+        this.box2d.createStaticBox(400, 300, 32, 32);
         this.add.image(400, 300, 'spider-bot');
     }
 
