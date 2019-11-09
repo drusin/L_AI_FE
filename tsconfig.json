@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
       "target": "es5",
-      "sourceMap": true
+      "sourceMap": true,
+      "alwaysStrict": true,
+      "lib": [ "dom", "es2019" ]
     },
     "include": [
       "**/*.ts"
