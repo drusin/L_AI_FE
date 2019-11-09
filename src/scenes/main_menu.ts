@@ -2,8 +2,8 @@
 import { Scene } from 'phaser'
 
 const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {
-    active: true,
-    visible: true,
+    active: false,
+    visible: false,
     key: 'MainMenu'
   };
 
