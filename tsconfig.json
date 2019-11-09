@@ -1,11 +1,13 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "sourceMap": true,
-      "alwaysStrict": true,
-      "lib": [ "dom", "es2019" ]
-    },
-    "include": [
-      "**/*.ts"
-    ]
-  }
+  "compilerOptions": {
+    "target": "es6",
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "removeComments": true,
+    "lib": ["dom", "es2019"],
+    "moduleResolution": "node"
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
