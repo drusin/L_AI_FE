@@ -19,8 +19,8 @@ export class MainMenuScene extends Scene {
 
     preload() {
         this.load.spritesheet(
-            'spider-bot', 
-            spiderBotSpritesheet, 
+            'spider-bot',
+            spiderBotSpritesheet,
             { frameWidth: 32, frameHeight: 32 }
         );
     }
@@ -30,9 +30,18 @@ export class MainMenuScene extends Scene {
         this.box2d = new Box2d();
         this.box2d.createStaticBox(10, 30, 100, 25);
         this.box2d.createStaticBox(100, 300, 17, 76);
-        
+
         this.box2d.createStaticBox(400, 300, 32, 32);
         this.add.image(400, 300, 'spider-bot');
+
+        // possible example of how to draw debug lines:
+        const graphics = this.add.graphics();
+        graphics.lineStyle(5, 0xFF00FF, 1.0);
+        // graphics.fillStyle(0xFFFFFF, 1.0);
+        // graphics.fillRect(50, 50, 400, 200);
+        graphics.strokeRect(50, 50, 400, 200);
+        graphics.strokeRect(50, 50, 200, 200);
+        // graphics.clear();
     }
 
     update(time: number, delta: number): void {
